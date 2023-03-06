@@ -14,14 +14,14 @@ class MainViewModel : ViewModel() {
         ++counter
         currentCounter.value = counter
         totalCounter()
-        clickHistory += "+1"
+        clickHistory.add("+1")
     }
 
     fun onDecrementClick() {
         --counter
         currentCounter.value = counter
         totalCounter()
-        clickHistory += "-1"
+        clickHistory.add("-1")
     }
 
     private fun totalCounter() {
